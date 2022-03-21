@@ -1,0 +1,208 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(204, 204, 204);
+}
+nav{
+    text-align: center;
+}
+nav h1{
+    color: black;
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+    right: 16rem;
+    padding: 2px;
+    top: 10px;
+    font-weight: 800;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+nav ul{
+    display: inline-flex;
+    color: white;
+    position: relative;
+    top: 6px;
+    right: 16em;
+}
+nav ul li{
+    width: 120px;
+    margin: 8px;
+    padding: 12px;
+}
+nav ul li a{
+    color: black;
+    font-size: small;
+    padding-right: 150px;
+}
+.side{
+    float: right;
+    padding-right: 10em;
+    padding-top: 20px;
+}
+img{
+     height: 50px;
+     width: 50px;
+     position: relative;
+     left: 20em;
+     top: 1em;
+}
+a{
+    position: relative;
+    left: 18em;
+}
+.grid-con{
+    position: relative;
+    left: 30em;
+    top: 8em;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 50px 50px 50px 50px;
+    grid-template-areas: 
+    "mainb mainb mainb mainb"
+    "sub1 sub2 sub3 sub4";
+    width: 500px;
+    height: 800px;
+    justify-content: left;
+    gap: 10px;
+}
+.mainb{
+    grid-area: mainb;
+    background-image: url(images/call-of-duty-4k-phone-wallpapers.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    border-radius: 10px;
+}
+.sub1{
+    grid-area: sub1;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    bottom: 30px;
+    background-image: url(images/call-of-duty-mobile-game-wallpapers.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid rgb(65, 65, 7);
+    border-radius: 10px;
+    opacity: .6;
+}
+.sub2{
+    grid-area: sub2;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    right: 10px;
+    bottom: 30px;
+    background-image: url(images/wp5448299-harley-quinn-fortnite-outfit-wallpapers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.sub3{
+    grid-area: sub3;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    right: 255px;
+    bottom: 30px;
+    background-image: url(images/IMG-20210812-WA0124.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.sub4{
+    grid-area: sub3;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 10px;
+    bottom: 30px;
+    background-image: url(images/Ratel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.context{
+    height: 500px;
+    width: 600px;
+    float: right;
+    justify-content: left;
+    position: relative;
+    bottom: 55em;
+    right: 28em;
+}
+#intro{
+    color: rgb(252, 252, 0);
+    font-size: x-large;
+}
+#title{
+     font-size: 60px;
+}
+.context p{
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+#discount{
+    display: inline-flex;
+    padding: 3px;
+    background-color: yellow;
+    opacity: .6;
+    color: rgb(255, 0, 0);
+    border-radius: 4px;
+    position: relative;
+    left: 110px;
+    bottom: 25px;
+    font-weight: bold;
+}
+#off{
+    text-decoration: line-through;
+    position: relative;
+    bottom: 10px;
+}
+.count{
+    width: 100px;
+    height: 30px;
+    background-color: rgba(128, 128, 128, 0.322);
+    display: inline-flex;
+    border-radius: 10px;
+    margin: 10px;
+}
+#minus{
+letter-spacing: 10px;
+position: relative;
+left: 16px;
+top: 5px;
+color: orangered;
+}
+button{
+    background-color: orangered;
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 0px 10px 20px orangered;
+}
+:root{
+    --main-radius:5px;
+    --main-padding:5px;
+}
+@media only screen and (max-width: 550px) 
+{
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: 
+        "nav"
+        "grid-con"
+        "context";
+    }
+}
+    
+
